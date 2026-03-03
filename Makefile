@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: test data-manifest data-filter train infer-ddim infer-ddpm
+.PHONY: test data-manifest data-filter train infer-ddim infer-ddpm evaluate
 
 test:
 	$(PYTHON) -m pytest
@@ -19,3 +19,6 @@ infer-ddim:
 
 infer-ddpm:
 	$(PYTHON) scripts/infer.py --config config/inference/ddpm_256.yaml
+
+evaluate:
+	$(PYTHON) scripts/evaluate.py --config config/evaluation/maad_face_eval.yaml

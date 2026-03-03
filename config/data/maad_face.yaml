@@ -1,8 +1,12 @@
 dataset:
   name: maad-face
+  metadata_source_url: https://github.com/pterhoer/MAAD-Face
+  metadata_notes: Official MAAD-Face attribute annotations repository.
   metadata_path: data/raw/metadata/MAAD_Face.csv
   manifest_path: data/processed/manifests/df_balanced.csv
   manifest_report_path: data/reports/balancing_report.json
+  source_archive_url: https://www.kaggle.com/datasets/hearfool/vggface2
+  source_archive_notes: Kaggle-hosted VGGFace2 archive used as the image source for this repository workflow.
   source_archive_path: data/raw/downloads/vggface2.zip
   filtered_archive_path: data/processed/archives/dataset_filtrado_drive.zip
   archive_report_path: data/reports/archive_filter_report.json

@@ -1,0 +1,4 @@
+-r training.txt
+torchmetrics[image]>=1.4,<1.8
+torch-fidelity>=0.3,<0.4
+facenet-pytorch>=2.6,<2.7

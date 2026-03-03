@@ -1,0 +1,27 @@
+device: cpu
+
+evaluation:
+  generated_dir: artifacts/inference
+  real_dir: data/evaluation/reference_images
+  output_path: artifacts/evaluation/maad_face_eval.json
+  recursive: true
+
+  distribution_metrics:
+    enabled: true
+    device: cpu
+    batch_size: 16
+    image_size: 299
+    fid: true
+    kid: true
+    inception_score: true
+    kid_subset_size: 50
+
+  face_detection:
+    enabled: true
+    detector: mtcnn
+    device: cpu
+    min_face_size: 20
+    thresholds: [0.6, 0.7, 0.7]
+    keep_all: true
+    max_images:
+    sample_failures: 10
