@@ -31,8 +31,14 @@ logs/
 
 # Dataset artifacts
 data/raw/metadata/MAAD_Face.csv
-data/raw/downloads/
+data/raw/downloads/*
+!data/raw/downloads/.gitkeep
+data/evaluation/reference_images/*
+!data/evaluation/reference_images/.gitkeep
 data/processed/manifests/*.csv
+!data/processed/manifests/.gitkeep
 data/processed/archives/*.zip
+!data/processed/archives/.gitkeep
 data/reports/*.json
+!data/reports/.gitkeep
 
