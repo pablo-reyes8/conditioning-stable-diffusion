@@ -1,0 +1,14 @@
+name: unet_latent_512
+in_channels: 4
+base_channels: 192
+channel_mults: [1, 2, 3, 4]
+num_res_blocks: 2
+attn_resolutions: [16, 8]
+time_embed_dim: 512
+dropout: 0.1
+num_heads: 4
+head_dim: 64
+img_resolution: 64
+use_cross_attn: true
+context_dim: 256
+attn_drop: 0.0

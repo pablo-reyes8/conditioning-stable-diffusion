@@ -1,0 +1,83 @@
+seed: 42
+device: cpu
+
+model_config: config/models/unet_latent_256.yaml
+
+data:
+  archive_path: data/processed/archives/dataset_filtrado_drive.zip
+  manifest_path: data/processed/manifests/df_balanced.csv
+  zip_prefix: train/
+  image_size: 256
+  batch_size: 4
+  shuffle: true
+  num_workers: 0
+  pin_memory: false
+  drop_last: true
+  attributes:
+    - Male
+    - Young
+    - Senior
+    - Asian
+    - Black
+    - Smiling
+    - Blond_Hair
+    - Chubby
+    - Heavy_Makeup
+    - Black_Hair
+    - Big_Nose
+
+vae:
+  name: stabilityai/sd-vae-ft-mse
+  dtype: float16
+  latent_scaling: 0.18215
+
+diffusion:
+  T: 1000
+  schedule: linear
+  beta_min: 0.0001
+  beta_max: 0.02
+  clamp_x0: true
+
+optimizer:
+  weight_decay: 0.0001
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+
+training:
+  epochs: 50
+  base_lr: 0.0002
+  min_lr: 0.00002
+  warmup_steps: 1000
+  grad_clip: 1.0
+  use_autocast: true
+  amp_dtype: bf16
+  cfg_drop_prob: 0.12
+  latent_hw: 32
+  grad_accum_steps: 1
+  use_channels_last: false
+  on_oom: skip
+  log_every: 0
+  log_mem: false
+  log_grad_norm: false
+  ema_decay: 0.9995
+
+sampling:
+  kind: ddim
+  every: 1
+  sample_n: 16
+  steps: 50
+  eta: 0.0
+  guidance_scale: 7.5
+  seed: 1234
+  sample_with_ema: true
+  sample_no_ema_first_n_epochs: 0
+  attributes:
+    Smiling: 1
+    Young: 1
+
+checkpoint:
+  dir: artifacts/checkpoints/maad256
+  run_name: maad256_ldm
+  save_every: 1
+  save_last: true
+  copy_fixed_to_drive: false

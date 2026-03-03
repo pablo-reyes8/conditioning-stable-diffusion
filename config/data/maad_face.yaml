@@ -1,0 +1,29 @@
+dataset:
+  name: maad-face
+  metadata_path: data/raw/metadata/MAAD_Face.csv
+  manifest_path: data/processed/manifests/df_balanced.csv
+  manifest_report_path: data/reports/balancing_report.json
+  source_archive_path: data/raw/downloads/vggface2.zip
+  filtered_archive_path: data/processed/archives/dataset_filtrado_drive.zip
+  archive_report_path: data/reports/archive_filter_report.json
+  download_url: ""
+  download_output_path: data/raw/downloads/source_dataset.zip
+  download_sha256: ""
+  filename_column: Filename
+  identity_column: Identity
+  zip_prefix: train/
+  sample_size: 100000
+  random_state: 42
+  correlation_threshold: 0.25
+  attributes:
+    - Male
+    - Young
+    - Senior
+    - Asian
+    - Black
+    - Smiling
+    - Blond_Hair
+    - Chubby
+    - Heavy_Makeup
+    - Black_Hair
+    - Big_Nose

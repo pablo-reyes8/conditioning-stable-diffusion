@@ -1,0 +1,2 @@
+-r base.txt
+pyarrow>=16.1,<19.0

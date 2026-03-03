@@ -1,0 +1,47 @@
+seed: 1234
+device: cpu
+
+model_config: config/models/unet_latent_256.yaml
+
+data:
+  attributes:
+    - Male
+    - Young
+    - Senior
+    - Asian
+    - Black
+    - Smiling
+    - Blond_Hair
+    - Chubby
+    - Heavy_Makeup
+    - Black_Hair
+    - Big_Nose
+
+vae:
+  name: stabilityai/sd-vae-ft-mse
+  dtype: float16
+  latent_scaling: 0.18215
+
+diffusion:
+  T: 1000
+  schedule: linear
+  beta_min: 0.0001
+  beta_max: 0.02
+  clamp_x0: true
+
+inference:
+  sampler: ddpm
+  checkpoint_path: artifacts/checkpoints/maad256/maad256_ldm_last.pt
+  strict_checkpoint: true
+  use_ema: true
+  ema_decay: 0.9995
+  n: 16
+  latent_hw: 32
+  guidance_scale: 7.5
+  seed: 1234
+  out_path: artifacts/inference/ddpm_grid.png
+  save_individual: false
+  out_dir: artifacts/inference/ddpm_individual
+  attributes:
+    Smiling: 1
+    Young: 1

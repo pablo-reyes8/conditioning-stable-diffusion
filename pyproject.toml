@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stable-difussion"
+version = "0.1.0"
+description = "Latent diffusion training, inference, and data tooling for attribute-conditioned face generation."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Alejo" }
+]
+license = { text = "Proprietary" }
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

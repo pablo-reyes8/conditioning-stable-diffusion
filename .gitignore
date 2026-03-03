@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Project artifacts
+artifacts/
+checkpoints/
+outputs/
+logs/
+
+# Dataset artifacts
+data/raw/metadata/MAAD_Face.csv
+data/raw/downloads/
+data/processed/manifests/*.csv
+data/processed/archives/*.zip
+data/reports/*.json
+
+# Generated media
+inference/samples_*/
+training_progress/
