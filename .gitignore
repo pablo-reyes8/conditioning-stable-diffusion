@@ -36,6 +36,3 @@ data/processed/manifests/*.csv
 data/processed/archives/*.zip
 data/reports/*.json
 
-# Generated media
-inference/samples_*/
-training_progress/
