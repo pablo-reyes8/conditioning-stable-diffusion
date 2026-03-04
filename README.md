@@ -19,7 +19,7 @@ The entire workflow is reproducible from versioned **YAML configs** and **CLIs**
 ## ✨ Sample outputs
 
 <p align="center">
-  <img src="inference/samples_54epoc/samples_ddpm2.png" width="800" alt="Training samples (512px)"/>
+  <img src="inference/samples_54epoc/samples_ddpm2.png" width="750" alt="Training samples (512px)"/>
 </p>
 
 > The grid above is emitted by the training loop as a checkpoint-time sanity check.  
