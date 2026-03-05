@@ -417,4 +417,3 @@ Datasets used operationally (local-only ingestion):
 
 - Large datasets, filtered archives, checkpoints, generated images, and reports are ignored in `.gitignore`.
 - `data/filter_data.py` is a compatibility wrapper; the maintained workflow is the CLI in `scripts/data.py`.
-- Notebooks exist for exploration, but the “source of truth” is the YAML-driven pipeline.
