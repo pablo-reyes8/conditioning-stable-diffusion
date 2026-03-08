@@ -16,7 +16,7 @@ The entire workflow is reproducible from versioned **YAML configs** and **CLIs**
 
 ---
 
-## ✨ Sample outputs
+## Sample outputs
 
 <p align="center">
   <img src="inference/samples_54epoc/samples_ddpm2.png" width="750" alt="Training samples (512px)"/>
