@@ -8,6 +8,12 @@
   <img alt="License" src="https://img.shields.io/badge/License-Research%20Only-yellow">
 </p>
 
+![Last commit](https://img.shields.io/github/last-commit/pablo-reyes8/conditioning-stable-diffusion)
+![Open issues](https://img.shields.io/github/issues/pablo-reyes8/conditioning-stable-diffusion)
+![Contributors](https://img.shields.io/github/contributors/pablo-reyes8/conditioning-stable-diffusion)
+![Forks](https://img.shields.io/github/forks/pablo-reyes8/conditioning-stable-diffusion?style=social)
+![Stars](https://img.shields.io/github/stars/pablo-reyes8/conditioning-stable-diffusion?style=social)
+
 **What this is:** a “from-scratch-ish” **latent diffusion** training + sampling stack (UNet + VAE latents) that generates faces **conditioned on binary attributes** (e.g., *Smiling*, *Young*, *Male*) using **Classifier-Free Guidance (CFG)**.  
 
 The entire workflow is reproducible from versioned **YAML configs** and **CLIs** (data → training → inference → evaluation), not notebooks.
