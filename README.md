@@ -25,7 +25,30 @@ The entire workflow is reproducible from versioned **YAML configs** and **CLIs**
 ## Sample outputs
 
 <p align="center">
-  <img src="inference/samples_54epoc/samples_ddpm2.png" width="750" alt="Training samples (512px)"/>
+  <img src="assets/young.png" width="70%" alt="Conditioned sample: Young smiling man"/>
+</p>
+<p align="center">
+  <em><strong>Condition:</strong> young smiling man.</em>
+</p>
+
+<p align="center">
+  <img src="assets/senior.png" width="70%" alt="Conditioned sample: Senior white man"/>
+</p>
+<p align="center">
+  <em><strong>Condition:</strong> senior white man.</em>
+</p>
+
+<p align="center">
+  <img src="assets/afroamerican.png" width="70%" alt="Conditioned sample: Black man"/>
+</p>
+<p align="center">
+  <em><strong>Condition:</strong> black man.</em>
+</p>
+
+<p align="center">
+  <em>
+    Examples of conditioned Stable Diffusion generations illustrating how the model responds to different attribute prompts.
+  </em>
 </p>
 
 > The grid above is emitted by the training loop as a checkpoint-time sanity check.  
