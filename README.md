@@ -42,7 +42,7 @@ The entire workflow is reproducible from versioned **YAML configs** and **CLIs**
   <img src="assets/afroamerican.png" width="70%" alt="Conditioned sample: Black man"/>
 </p>
 <p align="center">
-  <em><strong>Condition:</strong> black man.</em>
+  <em><strong>Condition:</strong> black smiling man.</em>
 </p>
 
 <p align="center">
