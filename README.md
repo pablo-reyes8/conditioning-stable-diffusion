@@ -447,3 +447,8 @@ Datasets used operationally (local-only ingestion):
 
 - Large datasets, filtered archives, checkpoints, generated images, and reports are ignored in `.gitignore`.
 - `data/filter_data.py` is a compatibility wrapper; the maintained workflow is the CLI in `scripts/data.py`.
+
+## License
+
+This project is licensed under the **MIT License**.  Individual submodules may ship with their own notices if required. I recomend to reference the original papers.
+See the [LICENSE](LICENSE) file for the full legal text.
