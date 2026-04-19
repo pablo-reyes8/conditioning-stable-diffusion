@@ -25,21 +25,21 @@ The entire workflow is reproducible from versioned **YAML configs** and **CLIs**
 ## Sample outputs
 
 <p align="center">
-  <img src="assets\strip_young_man.png" width="85%" alt="Conditioned sample: Young smiling man"/>
+  <img src="assets\strip_young_man.png" width="86%" alt="Conditioned sample: Young smiling man"/>
 </p>
 <p align="center">
   <em><strong>Condition:</strong> young smiling man.</em>
 </p>
 
 <p align="center">
-  <img src="assets\strip_senior_man.png" width="85%" alt="Conditioned sample: Senior white man"/>
+  <img src="assets\strip_senior_man.png" width="86%" alt="Conditioned sample: Senior white man"/>
 </p>
 <p align="center">
   <em><strong>Condition:</strong> senior white man.</em>
 </p>
 
 <p align="center">
-  <img src="assets/afroamerican.png" width="85%" alt="Conditioned sample: Black man"/>
+  <img src="assets/afroamerican.png" width="86%" alt="Conditioned sample: Black man"/>
 </p>
 <p align="center">
   <em><strong>Condition:</strong> black smiling man.</em>
